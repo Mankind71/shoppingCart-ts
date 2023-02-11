@@ -7,7 +7,7 @@ type StoreItemProps = {
   price: number;
   imgUrl: string;
 };
-const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
+const StoreItem: React.FC<StoreItemProps> = ({ id, name, price, imgUrl }) => {
   const {
     getItemQuantity,
     increaseCartQuantity,
